@@ -14,7 +14,7 @@ HiChat.prototype = {
     init: function() {//此方法初始化程序
         var that = this;
         //建立到服务器的socket连接
-        this.socket = io.connect('https://tranquil-journey-11270.herokuapp.com');
+        this.socket = io.connect('https://tranquil-journey-11270.herokuapp.com:4948');
         //监听socket的connect事件，此事件表示连接已经建立
         this.socket.on('connect', function() {
             //连接到服务器后，显示昵称输入框
